@@ -1,0 +1,17 @@
+.container {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  .navbarContainer {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+  }
+
+  .content {
+    margin-top: 55px;
+  }
+}
