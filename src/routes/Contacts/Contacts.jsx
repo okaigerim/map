@@ -42,10 +42,52 @@ export const Contacts = () => {
         </div>
         <div className={styles.rightContent}>
           <div className={styles.mainContent}>
-            <label htmlFor="fullname" title="Full name">
-              <span class="tooltip">Full name</span>
-              <input id="fullname" type="text" />
+            <label
+              htmlFor="fullname"
+              title="Full name"
+              className={styles.label1}
+            >
+              <span className={styles.title}>
+                Full name
+              </span>
+              <input
+                id="fullname"
+                type="text"
+                className={styles.input1}
+                placeholder="Input your full name in here"
+              />
             </label>
+            <label
+              htmlFor="fullname"
+              title="Full name"
+              className={styles.label1}
+            >
+              <span className={styles.title}>
+                Email
+              </span>
+              <input
+                id="fullname"
+                type="text"
+                className={styles.input1}
+                placeholder="Input your email in here"
+              />
+            </label>
+            <label
+              htmlFor="fullname"
+              title="Full name"
+              className={styles.label1}
+            >
+              <span className={styles.title}>
+                Messages
+              </span>
+              <input
+                id="fullname"
+                type="text"
+                className={styles.input2}
+                placeholder="Input your email in here"
+              />
+            </label>
+            <button type="button" className={styles.btn}>Send</button>
           </div>
         </div>
       </div>
