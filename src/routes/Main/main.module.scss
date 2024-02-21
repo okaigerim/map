@@ -185,7 +185,7 @@
 
     .mainContent {
       padding: 0px 70px 0px 70px;
-     
+
       .topText {
         display: flex;
         flex-direction: column;
@@ -211,6 +211,56 @@
           align-self: center;
           text-align: center;
           font-size: 20px;
+        }
+      }
+
+      .cardContainer {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        place-items: center; 
+        
+        .cardItem {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          height: 230px;
+          width: 500px;
+          background: #0540f2;
+          border-color: #0540f2;
+          border-radius: 30px;
+
+          .cardItemImg {
+            height: 47px;
+            width: 47px;
+            align-self: center;
+            padding-left: 25px;
+          }
+
+          .cardItemText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            padding: 0 40px 0 20px;
+
+            .title {
+              font-family: "Abhaya Libre";
+              font-weight: 400;
+              font-size: 25px;
+              color: #fff;
+              margin: 0;
+            }
+
+            .subtitle {
+              font-family: "Montserrat", sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              color: #fff;
+              margin: 0;
+            }
+          }
         }
       }
     }

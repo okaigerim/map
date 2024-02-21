@@ -1,7 +1,16 @@
 import React from "react";
 
-import { uni1 } from "../../assets/images/index";
-import { uni2 } from "../../assets/images/index";
+import {
+  uni1,
+  uni2,
+  settings,
+  person,
+  paint,
+  lang,
+  book,
+  science,
+} from "../../assets/images/index";
+
 import styles from "./main.module.scss";
 
 export const Main = () => {
@@ -94,6 +103,91 @@ export const Main = () => {
               specialties, in which currently there are no specialists in
               Kazakhstan.
             </p>
+          </div>
+          <div className={styles.cardContainer}>
+            <div className={styles.cardItem}>
+              <img
+                src={settings}
+                alt="settings"
+                className={styles.cardItemImg}
+              />
+              <div className={styles.cardItemText}>
+                <p className={styles.title}>
+                  Institute of digital equipment and technologies
+                </p>
+                <p className={styles.subtitle}>
+                  The leading organization in Kazakhstan in the field of
+                  industrial automation, big data and machine intelligence.
+                </p>
+              </div>
+            </div>
+            <div className={styles.cardItem}>
+              <img src={person} alt="person" className={styles.cardItemImg} />
+              <div className={styles.cardItemText}>
+                <p className={styles.title}>
+                  Science & Technology Solutions JSC
+                </p>
+                <p className={styles.subtitle}>
+                  Scientific-technological and educational center, created in
+                  order to provide the economy with popular and competitive
+                  innovative scientific developments in priority areas of
+                  activity.
+                </p>
+              </div>
+            </div>
+            <div className={styles.cardItem}>
+              <img src={paint} alt="paint" className={styles.cardItemImg} />
+              <div className={styles.cardItemText}>
+                <p className={styles.title}>Physics and technology institute</p>
+                <p className={styles.subtitle}>
+                  “Physicotechnical Institute” is one of the leading research
+                  institutes of Kazakhstan in the field of materials science,
+                  high energy physics and cosmic rays.
+                </p>
+              </div>
+            </div>
+            <div className={styles.cardItem}>
+              <img src={lang} alt="lang" className={styles.cardItemImg} />
+              <div className={styles.cardItemText}>
+                <p className={styles.title}>
+                  Institute of geological sciences of K.I. Satpayev
+                </p>
+                <p className={styles.subtitle}>
+                  The leading geological research center, allowing a wide range
+                  of research in the field of regional geology, stratigraphy,
+                  mineralogy, geochemistry of solid, liquid and gaseous systems,
+                  the study of mineral deposits and oil geology.
+                </p>
+              </div>
+            </div>
+            <div className={styles.cardItem}>
+              <img src={book} alt="book" className={styles.cardItemImg} />
+              <div className={styles.cardItemText}>
+                <p className={styles.title}>
+                  Institute of Metallurgy and Ore Beneficiation
+                </p>
+                <p className={styles.subtitle}>
+                  A large world-class research institute carrying out
+                  fundamental and applied research and the development of new
+                  technologies in the field of mineral processing, metallurgy
+                  and materials science.
+                </p>
+              </div>
+            </div>
+            <div className={styles.cardItem}>
+              <img src={science} alt="science" className={styles.cardItemImg} />
+              <div className={styles.cardItemText}>
+                <p className={styles.title}>
+                  Institute of Metallurgy and Ore Beneficiation
+                </p>
+                <p className={styles.subtitle}>
+                  The only scientific organization of the Republic of Kazakhstan
+                  in the development of fundamental and applied problems of
+                  hydrogeology, geo-ecology and rational integrated use of water
+                  resources of the subsoil.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
