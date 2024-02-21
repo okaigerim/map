@@ -18,7 +18,7 @@ export const Navbar = () => {
         </div>
         <div className={styles.navigationLinks}>
           <Link to="/" className={styles.button}>Home</Link>
-          <Link to="/" className={styles.button}>Admissions</Link>
+          <Link to="/admissions" className={styles.button}>Admissions</Link>
           <Link to="/" className={styles.button}>Academics</Link>
           <Link to="/" className={styles.button}>Faculty & Research</Link>
           <Link to="/contact-us" className={styles.button}>Contacts</Link>

@@ -1,0 +1,82 @@
+.container {
+  .mainContent {
+    width: 100%;
+    .section1 {
+      height: calc(100vh - 55px);
+      background: #f5f5f5;
+      .topText {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-family: "Abhaya Libre";
+          font-weight: 400;
+          font-size: 64px;
+          line-height: 108%;
+          color: #0540f2;
+          align-self: center;
+          margin-bottom: 0;
+        }
+        p {
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          color: #000;
+          align-self: center;
+          font-size: 20px;
+        }
+      }
+      .stepperCard {
+        width: 60%;
+        height: calc(100vh*0.6);
+        background: white;
+        margin: 20px auto 0 auto;
+        border-radius: 80px;
+
+        .titles {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .title {
+            padding: 10px;
+            font-family: "Abhaya Libre", sans-serif;
+            font-weight: 400;
+            font-size: 34px;
+            margin: 10px 0;
+            text-align: center;
+          }
+
+          .subCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 90px;
+            background-color: #0540f2;
+            width: 100%;
+
+            .img {
+              width: 30px;
+              height: 30px;
+              align-self: center;
+              margin-bottom: 0;
+            }
+
+            .subtitle {
+              font-family: "Montserrat", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              color: #fff;
+              align-self: center;
+              font-size: 16px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,6 +11,7 @@ import science from './science.svg';
 import studentConsult from './student_concil.png';
 import blueCheck from './blueCheck.svg';
 import circle from './circle.svg';
+import calendar from './calendar.svg';
 
 export {
   logoDesktop,
@@ -25,5 +26,6 @@ export {
   science,
   studentConsult,
   blueCheck,
-  circle
+  circle,
+  calendar
 }
