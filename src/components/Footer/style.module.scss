@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  height: 430px;
+  background: #0540f2;
+  color: #fff;
+
+  .mainContent {
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .col1 {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-family: "Abhaya Libre", sans-serif;
+        font-weight: 400;
+        font-size: 64px;
+        margin: 0;
+      }
+      .subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+
+    .col2 {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-family: "Abhaya Libre", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      .subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: 5px;
+        cursor: pointer;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

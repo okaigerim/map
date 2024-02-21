@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Layout } from "./routes/Layout/Layout";
 import { Main } from "./routes/Main/Main";
+import { Contacts } from "./routes/Contacts/Contacts";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/contact-us" element={<Contacts />} />
           </Routes>
         </Layout>
       </Router>

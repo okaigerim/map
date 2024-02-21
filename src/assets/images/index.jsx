@@ -8,6 +8,9 @@ import paint from './paint.svg';
 import lang from './lang.svg';
 import book from './book.svg';
 import science from './science.svg';
+import studentConsult from './student_concil.png';
+import blueCheck from './blueCheck.svg';
+import circle from './circle.svg';
 
 export {
   logoDesktop,
@@ -19,5 +22,8 @@ export {
   paint,
   lang,
   book,
-  science
+  science,
+  studentConsult,
+  blueCheck,
+  circle
 }

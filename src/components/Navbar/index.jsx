@@ -21,7 +21,7 @@ export const Navbar = () => {
           <Link to="/" className={styles.button}>Admissions</Link>
           <Link to="/" className={styles.button}>Academics</Link>
           <Link to="/" className={styles.button}>Faculty & Research</Link>
-          <Link to="/" className={styles.button}>Contacts</Link>
+          <Link to="/contact-us" className={styles.button}>Contacts</Link>
           <Link to="/" className={styles.button}>Campus Navigation</Link>
         </div>
       </div>
