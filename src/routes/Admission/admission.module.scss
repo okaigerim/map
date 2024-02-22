@@ -2,7 +2,7 @@
   .mainContent {
     width: 100%;
     .section1 {
-      height: calc(100vh - 55px);
+     
       background: #f5f5f5;
       .topText {
         display: flex;
@@ -28,7 +28,7 @@
       }
       .stepperCard {
         width: 60%;
-        height: calc(100vh*0.6);
+        
         background: white;
         margin: 20px auto 0 auto;
         border-radius: 80px;
@@ -75,6 +75,20 @@
               margin: 0;
             }
           }
+        }
+
+        .stepperAnchor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          padding: 24px;
+          background-color: #fff;
+          border: 1px solid #fff;
+          border-radius: 12px;
+          width: 50%;
+
         }
       }
     }

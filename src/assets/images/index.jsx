@@ -12,6 +12,9 @@ import studentConsult from './student_concil.png';
 import blueCheck from './blueCheck.svg';
 import circle from './circle.svg';
 import calendar from './calendar.svg';
+import checkCircleFillIcon from './check_circle_fill.svg';
+import roundLineIcon from './round-line.svg';
+import blueRadioButtonIcon from './blue-radiobutton.svg';
 
 export {
   logoDesktop,
@@ -27,5 +30,8 @@ export {
   studentConsult,
   blueCheck,
   circle,
-  calendar
+  calendar,
+  checkCircleFillIcon,
+  roundLineIcon,
+  blueRadioButtonIcon,
 }
