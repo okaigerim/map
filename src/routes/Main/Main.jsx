@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Footer } from "../../components/Footer";
 
@@ -18,6 +19,8 @@ import {
 import styles from "./main.module.scss";
 
 export const Main = () => {
+  const navigate = useNavigate();
+
   const cardData = [
     {
       imgSrc: settings,
@@ -117,7 +120,7 @@ export const Main = () => {
                 University comprises National Technology Center “Parassat” and 8
                 research institutes as well.
               </p>
-              <button type="button" className={styles.btn1}>
+              <button type="button" className={styles.btn1} onClick={()=>{navigate('/academics')}}>
                 Read more
               </button>
             </div>
@@ -180,7 +183,7 @@ export const Main = () => {
                   <p className={styles.subtext}>{item.text}</p>
                 </div>
               ))}
-              <button type="button" className={styles.btn}>
+              <button type="button" className={styles.btn} onClick={()=>{navigate('/admissions')}}>
                 See all our admission
               </button>
             </div>

@@ -64,7 +64,7 @@
         h2 {
           font-family: "Abhaya Libre";
           font-weight: 400;
-          font-size: 64px;
+          font-size: 60px;
           line-height: 108%;
           color: #0540f2;
           width: 40%;
@@ -94,7 +94,7 @@
           .img1 {
             border: 1px solid transparent;
             border-radius: 30px;
-            height: 600px;
+            height: calc(100vh*0.6);
             width: 90%;
           }
         }
@@ -107,7 +107,7 @@
           .img2 {
             border: 1px solid transparent;
             border-radius: 30px;
-            height: 350px;
+            height: calc(100vh*0.3);
             width: 100%;
           }
 

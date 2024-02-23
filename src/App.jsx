@@ -5,6 +5,7 @@ import { Layout } from "./routes/Layout/Layout";
 import { Main } from "./routes/Main/Main";
 import { Contacts } from "./routes/Contacts/Contacts";
 import { Admission } from "./routes/Admission/Admission";
+import { Academics } from "./routes/Academics";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/contact-us" element={<Contacts />} />
             <Route path="/admissions" element={<Admission />} />
+            <Route path="/academics" element={<Academics />} />
           </Routes>
         </Layout>
       </Router>

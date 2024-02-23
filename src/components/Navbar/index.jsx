@@ -1,11 +1,14 @@
 import React from "react";
+import clsx from "clsx";
 
 import { logoDesktop } from "../../assets/images/index";
 
 import styles from "./style.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = () => {
+  const location = useLocation();
+  
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
@@ -17,12 +20,42 @@ export const Navbar = () => {
           />
         </div>
         <div className={styles.navigationLinks}>
-          <Link to="/" className={styles.button}>Home</Link>
-          <Link to="/admissions" className={styles.button}>Admissions</Link>
-          <Link to="/" className={styles.button}>Academics</Link>
-          <Link to="/" className={styles.button}>Faculty & Research</Link>
-          <Link to="/contact-us" className={styles.button}>Contacts</Link>
-          <Link to="/" className={styles.button}>Campus Navigation</Link>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div
+              className={clsx(
+                styles.button,
+                location.pathname === "/" && styles.active
+              )}
+            >
+              Home
+            </div>
+          </Link>
+          <Link to="/admissions" style={{ textDecoration: 'none' }}>
+            <div
+              className={clsx(
+                styles.button,
+                location.pathname === "/admissions" && styles.active
+              )}
+            >
+              Admissions
+            </div>
+          </Link>
+          <Link to="/academics" style={{ textDecoration: 'none' }}>
+            <div
+              className={clsx(
+                styles.button,
+                location.pathname === "/academics" && styles.active
+              )}
+            >
+              Academics
+            </div>
+          </Link>
+          <Link to="/contact-us" className={styles.button}>
+            Contacts
+          </Link>
+          <Link to="/" className={styles.button}>
+            Campus Navigation
+          </Link>
         </div>
       </div>
     </div>
