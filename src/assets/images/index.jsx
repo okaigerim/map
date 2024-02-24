@@ -15,6 +15,9 @@ import calendar from './calendar.svg';
 import checkCircleFillIcon from './check_circle_fill.svg';
 import roundLineIcon from './round-line.svg';
 import blueRadioButtonIcon from './blue-radiobutton.svg';
+import kzFlag from './kazakhstan.png';
+import ruFlag from './russia.png';
+import enFlag from './united-states-of-america.png';
 
 export {
   logoDesktop,
@@ -34,4 +37,7 @@ export {
   checkCircleFillIcon,
   roundLineIcon,
   blueRadioButtonIcon,
+  kzFlag,
+  ruFlag,
+  enFlag
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { I18nextProvider } from 'react-i18next';
 
+import i18n from "./utils/i18n";
 import { Layout } from "./routes/Layout/Layout";
 import { Main } from "./routes/Main/Main";
 import { Contacts } from "./routes/Contacts/Contacts";
@@ -10,16 +12,18 @@ import { Academics } from "./routes/Academics";
 function App() {
   return (
     <div>
-      <Router basename="/">
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/contact-us" element={<Contacts />} />
-            <Route path="/admissions" element={<Admission />} />
-            <Route path="/academics" element={<Academics />} />
-          </Routes>
-        </Layout>
-      </Router>
+      <I18nextProvider i18n={i18n}>
+        <Router basename="/">
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/contact-us" element={<Contacts />} />
+              <Route path="/admissions" element={<Admission />} />
+              <Route path="/academics" element={<Academics />} />
+            </Routes>
+          </Layout>
+        </Router>
+      </I18nextProvider>
     </div>
   );
 }

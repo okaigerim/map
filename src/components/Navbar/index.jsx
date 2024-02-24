@@ -1,10 +1,12 @@
 import React from "react";
 import clsx from "clsx";
+import { Link, useLocation } from "react-router-dom";
+
+import { Languages } from "../Languages";
 
 import { logoDesktop } from "../../assets/images/index";
 
 import styles from "./style.module.scss";
-import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -56,6 +58,9 @@ export const Navbar = () => {
           <Link to="/" className={styles.button}>
             Campus Navigation
           </Link>
+        </div>
+        <div className={styles.langs}>
+          <Languages />
         </div>
       </div>
     </div>
