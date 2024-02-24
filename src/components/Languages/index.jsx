@@ -11,9 +11,9 @@ export const Languages = () => {
   const { i18n } = useTranslation();
   const { language } = i18n;
   const langOptions = [
-    { label: 'KK', value: 'kk', flag: kzFlag },
-    { label: 'RU', value: 'ru', flag: ruFlag },
-    { label: 'EN', value: 'en', flag: enFlag },
+    { label: 'Қаз', value: 'kk', flag: kzFlag },
+    { label: 'Рус', value: 'ru', flag: ruFlag },
+    { label: 'Eng', value: 'en', flag: enFlag },
   ];
 
   const handleChangeLanguage = (currentLanguage) => {

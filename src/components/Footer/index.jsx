@@ -1,35 +1,39 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styles from "./style.module.scss";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
+import styles from './style.module.scss';
 
 export const Footer = () => {
+  const { t } = useTranslation('footer'); 
+
   return (
     <div className={styles.container}>
       <div className={styles.mainContent}>
         <div className={styles.col1}>
-          <p className={styles.title}>Satbayev University</p>
-          <p className={styles.subtitle}>Learning through research</p>
+          <p className={styles.title}>{t('satbayevUniversity')}</p>
+          <p className={styles.subtitle}>{t('learningThroughResearch')}</p>
         </div>
         <div className={styles.col2}>
-          <p className={styles.title}>Quick Links</p>
-          <Link className={styles.subtitle}>Home</Link>
-          <Link className={styles.subtitle}>Admissions</Link>
-          <Link className={styles.subtitle}>Academics</Link>
-          <Link className={styles.subtitle}>Contact Us</Link>
+          <p className={styles.title}>{t('quickLinks')}</p>
+          <Link className={styles.subtitle}>{t('home')}</Link>
+          <Link className={styles.subtitle}>{t('admissions')}</Link>
+          <Link className={styles.subtitle}>{t('academics')}</Link>
+          <Link className={styles.subtitle}>{t('contactUs')}</Link>
         </div>
         <div className={styles.col2}>
-          <p className={styles.title}>Pages</p>
-          <Link className={styles.subtitle}>Our Blog</Link>
-          <Link className={styles.subtitle}>Our Team</Link>
-          <Link className={styles.subtitle}>Testimonial</Link>
-          <Link className={styles.subtitle}>CTA</Link>
+          <p className={styles.title}>{t('pages')}</p>
+          <Link className={styles.subtitle}>{t('ourBlog')}</Link>
+          <Link className={styles.subtitle}>{t('ourTeam')}</Link>
+          <Link className={styles.subtitle}>{t('testimonial')}</Link>
+          <Link className={styles.subtitle}>{t('cta')}</Link>
         </div>
         <div className={styles.col2}>
-          <p className={styles.title}>Follow Us</p>
-          <Link to='https://www.facebook.com/satbayevuniversity/' target='_blank' className={styles.subtitle}>Facebook</Link>
-          <Link to='https://www.instagram.com/satbayev_university/' target='_blank' className={styles.subtitle}>Instagram</Link>
-          <Link to='https://t.me/s/Satbayev_University_Official?before=191' target='_blank' className={styles.subtitle}>Telegram</Link>
-          <Link to='https://www.youtube.com/user/TheKazntu/featured' target='_blank' className={styles.subtitle}>Youtube</Link>
+          <p className={styles.title}>{t('followUs')}</p>
+          <Link to='https://www.facebook.com/satbayevuniversity/' target='_blank' className={styles.subtitle}>{t('facebook')}</Link>
+          <Link to='https://www.instagram.com/satbayev_university/' target='_blank' className={styles.subtitle}>{t('instagram')}</Link>
+          <Link to='https://t.me/s/Satbayev_University_Official?before=191' target='_blank' className={styles.subtitle}>{t('telegram')}</Link>
+          <Link to='https://www.youtube.com/user/TheKazntu/featured' target='_blank' className={styles.subtitle}>{t('youtube')}</Link>
         </div>
       </div>
     </div>

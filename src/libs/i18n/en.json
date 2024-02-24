@@ -1,1 +1,81 @@
-{}
+{
+  "main": {
+    "section1": {
+      "title": "Learning through research",
+      "description": "The oldest and one of the most prestigious technical universities in Kazakhstan, known for the developments in the fields of mining and oil business"
+    },
+    "section2": {
+      "title": "Satbayev's Commitment to Academic Excellence",
+      "description": "For more than 80 years, the university has been synonymous with technological progress and leadership in Kazakhstan."
+    },
+    "section3": {
+      "title": "Explore Our Academic Offerings Chart Your Path to Success",
+      "description": "The university curriculum introduces the teaching of modern specialties, in which currently there are no specialists in Kazakhstan."
+    },
+    "section4": {
+      "title": "Student Admission Process and Assistance from us",
+      "description": "Get higher education in the technical university №1 of Kazakhstan"
+    },
+    "settingsTitle": "Institute of digital equipment and technologies",
+    "settingsSubtitle": "The leading organization in Kazakhstan in the field of industrial automation, big data and machine intelligence.",
+    "personTitle": "Science & Technology Solutions JSC",
+    "personSubtitle": "Scientific-technological and educational center, created in order to provide the economy competitive innovative developments.",
+    "paintTitle": "Physics and technology institute",
+    "paintSubtitle": "One of the leading research institutes of Kazakhstan in the field of materials science, high energy physics and cosmic rays.",
+    "langTitle": "Institute of geological sciences of K.I. Satpayev",
+    "langSubtitle": "Allows a wide range of research in the field of regional geology, stratigraphy, mineralogy, geochemistry of solid, and many more.",
+    "bookTitle": "Institute of Metallurgy and Ore Beneficiation",
+    "bookSubtitle": "Carries out applied research and the development of new technologies in the field of mineral processing, metallurgy and materials science.",
+    "scienceTitle": "Institute of Hydrogeology and Geoecology",
+    "scienceSubtitle": "The only scientific organization in the country in the development of applied problems of hydrogeology and geo-ecology.",
+    "cardData2Title1": "7",
+    "cardData2Subtitle1": "institutions",
+    "cardData2Title2": "31",
+    "cardData2Subtitle2": "departments",
+    "cardData2Title3": "660",
+    "cardData2Subtitle3": "teachers",
+    "cardData2Title4": "114",
+    "cardData2Subtitle4": "teaching and research laboratories",
+    "cardData2Title5": "11",
+    "cardData2Subtitle5": "scientific laboratories",
+    "cardData2Title6": "3",
+    "cardData2Subtitle6": "research and educational centers",
+    "cardData2Title7": "2000",
+    "cardData2Subtitle7": "grants annually",
+    "cardData2Title8": "14",
+    "cardData2Subtitle8": "student organizations",
+    "mainText1": "Complete everything as ordered",
+    "mainText2": "Provide your last exam result",
+    "mainText3": "Choose your desired program",
+    "mainText4": "Get contact with the instructor",
+    "mainText5": "Finally get started your program",
+    "readmore": "Read more",
+    "seeAll": "See all our admission"
+  },
+  "footer": {
+    "satbayevUniversity": "Satbayev University",
+    "learningThroughResearch": "Learning through research",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "admissions": "Admissions",
+    "academics": "Academics",
+    "contactUs": "Contact Us",
+    "pages": "Pages",
+    "ourBlog": "Our Blog",
+    "ourTeam": "Our Team",
+    "testimonial": "Testimonial",
+    "cta": "CTA",
+    "followUs": "Follow Us",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "telegram": "Telegram",
+    "youtube": "Youtube"
+  },
+  "navbar": {
+    "home":"Home",
+    "academics": "Academics",
+    "contact": "Contacts",
+    "admission": "Admissions",
+    "campus": "Campus Navigation"
+  }
+}

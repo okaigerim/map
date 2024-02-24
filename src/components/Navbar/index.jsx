@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { Languages } from "../Languages";
 
@@ -10,7 +11,8 @@ import styles from "./style.module.scss";
 
 export const Navbar = () => {
   const location = useLocation();
-  
+  const { t } = useTranslation('navbar');
+
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
@@ -29,7 +31,7 @@ export const Navbar = () => {
                 location.pathname === "/" && styles.active
               )}
             >
-              Home
+              {t('home')}
             </div>
           </Link>
           <Link to="/admissions" style={{ textDecoration: 'none' }}>
@@ -39,7 +41,7 @@ export const Navbar = () => {
                 location.pathname === "/admissions" && styles.active
               )}
             >
-              Admissions
+              {t('admission')}
             </div>
           </Link>
           <Link to="/academics" style={{ textDecoration: 'none' }}>
@@ -49,14 +51,21 @@ export const Navbar = () => {
                 location.pathname === "/academics" && styles.active
               )}
             >
-              Academics
+              {t('academics')}
             </div>
           </Link>
-          <Link to="/contact-us" className={styles.button}>
-            Contacts
+          <Link to="/contact-us" style={{ textDecoration: 'none' }}>
+            <div
+              className={clsx(
+                styles.button,
+                location.pathname === "/contact-us" && styles.active
+              )}
+            >
+              {t('contact')}
+            </div>
           </Link>
           <Link to="/" className={styles.button}>
-            Campus Navigation
+            {t('campus')}
           </Link>
         </div>
         <div className={styles.langs}>
