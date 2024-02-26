@@ -1,41 +1,40 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-import  StepperAnchor  from "../../components/StepperAnchor";
+import StepperAnchor from "../../components/StepperAnchor";
 import { Footer } from "../../components/Footer/index";
 
 import { calendar } from "../../assets/images/index";
 import styles from "./admission.module.scss";
 
 export const Admission = () => {
+  const { t } = useTranslation("admission");
+
   const steps = [
     {
       id: 1,
-      title: 'May 16 – July 5',
+      title: `${t("title1")}`,
       isDone: false,
-      subtitle2:
-        'Apply for UNT testing at app.testcenter.kz and take the UNT',
+      subtitle2: `${t("subtitle1")}`,
     },
     {
       id: 2,
-      title: 'June 20 – July 7',
+      title: `${t("title2")}`,
       isDone: false,
-      subtitle2:
-        'Take creative exams if you have chosen a creative education program',
+      subtitle2: `${t("subtitle2")}`,
     },
     {
-      id:3,
-      title: 'July 13 – July 20',
+      id: 3,
+      title: `${t("title3")}`,
       isDone: false,
-      subtitle2:
-        'Apply for a state educational grant at app.testcenter.kz',
+      subtitle2: `${t("subtitle3")}`,
     },
     {
-      id:4,
-      title: 'Get a grant',
+      id: 4,
+      title: `${t("title4")}`,
       isDone: false,
-      subtitle1: '04.04.2023, 12:51',
-      subtitle2:
-        'Grant competition results are published in early August',
+      subtitle1: "04.04.2023, 12:51",
+      subtitle2: `${t("subtitle4")}`,
     },
   ];
 
@@ -44,27 +43,25 @@ export const Admission = () => {
       <div className={styles.mainContent}>
         <div className={styles.section1}>
           <div className={styles.topText}>
-            <h2>Student Admission Process and Assistance from us</h2>
-            <p>
-              Get higher education in the technical university №1 of Kazakhstan
-            </p>
+            <h2>{t("mainTitle")}</h2>
+            <p>{t("mainsubtitle")}</p>
           </div>
 
           <div className={styles.stepperCard}>
             <div className={styles.titles}>
               <p className={styles.title}>
-                UNT submission and receiving a grant
+                {t("contentTitle")}
               </p>
               <div className={styles.subCard}>
                 <img src={calendar} alt="calendar" className={styles.img} />
-                <p className={styles.subtitle}>4 times a year</p>
+                <p className={styles.subtitle}>{t("contentSubtitle")}</p>
               </div>
             </div>
             <div className={styles.stepperAnchor}>
               <StepperAnchor steps={steps} mode="blue" />
             </div>
           </div>
-          <div style={{height: '30px', backgroundColor: '#f5f5f5'}}></div>
+          <div style={{ height: "30px", backgroundColor: "#f5f5f5" }}></div>
         </div>
       </div>
       <Footer />
