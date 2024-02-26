@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Fira+Mono&family=Inter:wght@200&family=Noto+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
 .container {
   display: flex;
@@ -23,7 +24,7 @@
       flex-direction: column;
       justify-content: flex-start;
       h2 {
-        font-family: "Belanosima", sans-serif;
+        font-family: "Cormorant", sans-serif;
         font-weight: 400;
         font-size: 6vw;
         font-style: normal;
@@ -31,17 +32,36 @@
         color: #fff;
         text-align: center;
         align-self: center;
-        width: 50%;
+        width: 80%;
         margin: 0;
+        animation: typing 1s steps(30, end), blink-caret .5s step-end infinite alternate;
       }
 
+      @keyframes typing {
+        from {
+          width: 0
+        }
+        to {
+          width: 100%
+        }
+      }
+    
+      @keyframes blink-caret {
+        from, to {
+          border-color: transparent
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+    
       p {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 500;
         color: #fff;
         align-self: center;
-        font-size: 2vw;
+        font-size: 1.5vw;
         width: 60%;
         text-align: center;
       }
@@ -308,7 +328,6 @@
         flex-direction: row;
         gap: 10px;
         justify-content: space-evenly;
-        // height: 100%;
 
         .img1 {
           border: 1px solid transparent;
@@ -319,7 +338,7 @@
         }
 
         .textContent {
-          width: 40%;
+          width: 45%;
           margin-top: 1.9vh;
           .mainText {
             display: flex;
@@ -330,13 +349,21 @@
             .checkImg {
               width: 5vw;
               height: 5vh;
+              margin: 6px;
             }
 
             .subtext {
               font-family: "Abhaya Libre";
               font-weight: 400;
-              font-size: 1.95vw;
-              // line-height: 130%;
+              font-size: 1.4vw;
+              color: #222;
+              margin: 8px 0;
+            }
+
+            .subtextRu {
+              font-family: "Abhaya Libre";
+              font-weight: 400;
+              font-size: 1.2vw;
               color: #222;
               margin: 8px;
             }
@@ -345,7 +372,6 @@
           .btn {
             font-weight: 400;
             font-size: 1.5vw;
-            // line-height: 108%;
             text-align: center;
             color: #fff;
             border-radius: 60px;
@@ -353,7 +379,7 @@
             background: #0540f2;
             cursor: pointer;
             padding: 10px 20px;
-            margin-top: 4vh;
+            margin-top: 10vh;
           }
         }
       }

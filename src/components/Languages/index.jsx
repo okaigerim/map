@@ -19,6 +19,7 @@ export const Languages = () => {
   const handleChangeLanguage = (currentLanguage) => {
     if (i18n.changeLanguage) {
       i18n.changeLanguage(currentLanguage);
+      
     } else if (i18n.languages) {
       i18n.languages = [currentLanguage];
     }

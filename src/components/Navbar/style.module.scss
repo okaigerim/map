@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .container {
   width: 100%;
   padding: 8px;
@@ -29,12 +31,12 @@
       margin: 0 auto;
       // padding-right: 200px;
       .button {
-        font-family: "Abhaya Libre", sans-serif;
+        font-family: "Montserrat", sans-serif;
         text-decoration: none;
-        padding: 0.8vh 1vw;
+        padding: 0.7vh 1vw;
         color: #1a202c;
-        font-weight: 800;
-        font-size: 1.2vw;
+        font-weight: 450;
+        font-size: 0.95vw;
         // line-height: 150%;
         letter-spacing: -0.02em;
 

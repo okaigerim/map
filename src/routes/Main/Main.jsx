@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import TypingAnimation from "../../utils/Typing/typing";
 import { Footer } from "../../components/Footer";
 
 import {
@@ -86,7 +87,7 @@ export const Main = () => {
     <div className={styles.container}>
       <div className={styles.section1}>
         <div className={styles.contents}>
-          <h2>{t("section1.title")}</h2>
+          <h2><TypingAnimation text={t("section1.title")} speed={100} /></h2>
           <p>{t("section1.description")}</p>
         </div>
       </div>
