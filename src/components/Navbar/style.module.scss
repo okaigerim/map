@@ -57,3 +57,53 @@
     }
   }
 }
+
+.mobileContainer {
+  width: 100%;
+  padding: 4px;
+  background-color: white;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+
+    .toggleButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;  
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+
+      .sidebarIcon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    .logo {
+      width: 40%;
+    }
+
+    .langs {
+      width: 25%;
+    }
+  }
+
+  .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 80;
+      margin-top: 43px;
+    
+  }
+}

@@ -18,6 +18,7 @@ import blueRadioButtonIcon from './blue-radiobutton.svg';
 import kzFlag from './kazakhstan.png';
 import ruFlag from './russia.png';
 import enFlag from './united-states-of-america.png';
+import sidebarIcon from './sidebarIcon.svg';
 
 export {
   logoDesktop,
@@ -39,5 +40,6 @@ export {
   blueRadioButtonIcon,
   kzFlag,
   ruFlag,
-  enFlag
+  enFlag,
+  sidebarIcon
 }

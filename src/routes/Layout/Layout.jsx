@@ -10,16 +10,13 @@ import styles from "./layout.module.scss";
 
 export const Layout = ({ children }) => {
   const isMobile = useIsMobile();
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
 
   return isMobile ? (
-    <div>
-      <h3>Mobile Layout</h3>
-      <div>{children}</div>
+    <div className={styles.mobilecontainer}>
+      <div className={styles.navbarContainer}>
+        <Navbar />
+      </div>
+      <div className={styles.content}>{children}</div>
     </div>
   ) : (
     <div className={styles.container}>
@@ -28,5 +25,5 @@ export const Layout = ({ children }) => {
       </div>
       <div className={styles.content}>{children}</div>
     </div>
-  );
+  );  
 };
