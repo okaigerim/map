@@ -5,10 +5,14 @@ import StepperAnchor from "../../components/StepperAnchor";
 import { Footer } from "../../components/Footer/index";
 
 import { calendar } from "../../assets/images/index";
+
+import useIsMobile from "../../utils/useIsMobile";
+
 import styles from "./admission.module.scss";
 
 export const Admission = () => {
   const { t } = useTranslation("admission");
+  const isMobile = useIsMobile();
 
   const steps = [
     {
@@ -39,7 +43,7 @@ export const Admission = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={isMobile ? styles.mobileContainer : styles.container}>
       <div className={styles.mainContent}>
         <div className={styles.section1}>
           <div className={styles.topText}>

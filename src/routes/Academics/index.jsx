@@ -3,10 +3,13 @@ import { useTranslation } from "react-i18next";
 
 import { Footer } from "../../components/Footer";
 
+import useIsMobile from "../../utils/useIsMobile";
+
 import styles from "./style.module.scss";
 
 export const Academics = () => {
   const { t } = useTranslation("academics");
+  const isMobile = useIsMobile();
 
   const section1data = [
     { title: `${t("section1.data.title1")}` },
@@ -85,7 +88,7 @@ export const Academics = () => {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={isMobile ? styles.mobileContainer : styles.container}>
         <div className={styles.main}>
           <div className={styles.section1}>
             <div className={styles.topText}>
@@ -102,7 +105,7 @@ export const Academics = () => {
               ))}
             </div>
           </div>
-          <hr style={{ marginTop: "55px", background: "#222" }} />
+          <hr style={isMobile ? { marginTop: "35px", background: "#222" } : { marginTop: "55px", background: "#222" }} />
           <div className={styles.section1}>
             <div className={styles.topText}>
               <h2>{t("section2.title")}</h2>
@@ -118,7 +121,7 @@ export const Academics = () => {
               ))}
             </div>
           </div>
-          <hr style={{ marginTop: "55px", background: "#222" }} />
+          <hr style={isMobile ? { marginTop: "35px", background: "#222" } : { marginTop: "55px", background: "#222" }} />
           <div className={styles.section1}>
             <div className={styles.topText}>
               <h2>{t("section3.title")}</h2>
@@ -134,7 +137,7 @@ export const Academics = () => {
               ))}
             </div>
           </div>
-          <hr style={{ marginTop: "55px", background: "#222" }} />
+          <hr style={isMobile ? { marginTop: "35px", background: "#222" } : { marginTop: "55px", background: "#222" }} />
           <div className={styles.section1}>
             <div className={styles.topText}>
               <h2>{t("section4.title")}</h2>
@@ -150,7 +153,7 @@ export const Academics = () => {
               ))}
             </div>
           </div>
-          <hr style={{ marginTop: "55px", background: "#222" }} />
+          <hr style={isMobile ? { marginTop: "35px", background: "#222" } : { marginTop: "55px", background: "#222" }} />
           <div className={styles.section1}>
             <div className={styles.topText}>
               <h2>{t("section5.title")}</h2>
@@ -166,7 +169,7 @@ export const Academics = () => {
               ))}
             </div>
           </div>
-          <hr style={{ marginTop: "55px", background: "#222" }} />
+          <hr style={isMobile ? { marginTop: "35px", background: "#222" } : { marginTop: "55px", background: "#222" }} />
           <div className={styles.section1}>
             <div className={styles.topText}>
               <h2>{t("section6.title")}</h2>
@@ -181,7 +184,7 @@ export const Academics = () => {
                 </div>
               ))}
             </div>
-            <div style={{ height: "55px" }} />
+            <div style={isMobile ? { height: "35px" } : { height: "55px" }} />
           </div>
         </div>
       </div>

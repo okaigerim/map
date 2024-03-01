@@ -5,13 +5,16 @@ import { Footer } from "../../components/Footer";
 
 import { circle } from "../../assets/images";
 
+import useIsMobile from "../../utils/useIsMobile";
+
 import styles from "./contacts.module.scss";
 
 export const Contacts = () => {
   const { t } = useTranslation("contacts");
+  const isMobile = useIsMobile();
 
   return (
-    <div className={styles.container}>
+    <div className={isMobile ? styles.mobileContainer : styles.container}>
       <div className={styles.mainContent}>
         <div className={styles.leftContent}>
           <div className={styles.textContent}>

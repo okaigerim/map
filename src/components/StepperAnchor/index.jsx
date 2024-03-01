@@ -31,7 +31,7 @@ const StepperAnchor = ({
   };
 
   return (
-    <div className={clsx(styles.stepper)}>
+    <div className={styles.stepper}>
       <div className={clsx(!isItemFullWidth && styles.stepContainer)}>
         {steps?.length &&
           steps.map((step, index) => (
