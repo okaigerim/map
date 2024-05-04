@@ -103,7 +103,7 @@ export const Navbar = () => {
               {t("contact")}
             </div>
           </Link>
-          <Link to="/" className={styles.button}>
+          <Link to="/campus-navigation" className={styles.button}>
             {t("campus")}
           </Link>
         </div>

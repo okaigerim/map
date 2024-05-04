@@ -8,6 +8,7 @@ import { Main } from "./routes/Main/Main";
 import { Contacts } from "./routes/Contacts/Contacts";
 import { Admission } from "./routes/Admission/Admission";
 import { Academics } from "./routes/Academics";
+import { CampusNavigation } from "./routes/CampusNavigation/CampusNavigation";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/contact-us" element={<Contacts />} />
               <Route path="/admissions" element={<Admission />} />
               <Route path="/academics" element={<Academics />} />
+              <Route path="/campus-navigation" element={<CampusNavigation />} />
             </Routes>
           </Layout>
         </Router>
