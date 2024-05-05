@@ -209,5 +209,8 @@
       "messagePlaceholder": "Input your message in here",
       "send": "Send"
     }
+  },
+  "campus": {
+    "title": "Campus Navigation"
   }
 }

@@ -4,9 +4,9 @@ import { initReactI18next } from 'react-i18next';
 import locales from '../libs/i18n/index';
 
 const initOptions = {
-  fallbackLng: 'en',
+  fallbackLng: 'ru',
   resources: locales,
-  lng: 'en',
+  lng: 'ru',
   debug: false,
   backend: {
     loadPath: '../libs/i18n/{{lng}}.json',
