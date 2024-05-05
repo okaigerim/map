@@ -3,14 +3,14 @@
 
 .container {
   .mainContent {
-    height: calc(100vh - 55px);
+    height: calc(100% - 55px);
     width: 100%;
     display: flex;
     flex-direction: row;
 
     .leftContent {
       margin: 1.8vh 0 3vh 3vw;
-      height: calc(100vh - 155px);
+      height: 100%;
       width: 50%;
       background-color: #3a86ff;
 
@@ -73,7 +73,7 @@
     .rightContent {
       margin: 1.8vh 3vw 3vh 0;
       width: 50%;
-      height: calc(100vh - 155px);
+      height: 100%;
       background-color: #f8f9fa;
 
       .mainContent {
