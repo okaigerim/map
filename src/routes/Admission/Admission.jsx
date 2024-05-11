@@ -37,7 +37,6 @@ export const Admission = () => {
       id: 4,
       title: `${t("title4")}`,
       isDone: false,
-      subtitle1: "04.04.2023, 12:51",
       subtitle2: `${t("subtitle4")}`,
     },
   ];
